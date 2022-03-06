@@ -15,7 +15,8 @@ import { DataService } from './services/data.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({count: counterReducer}, {})
+    StoreModule.forRoot({count: counterReducer}, {}),
+    StoreModule.forRoot({}, {})
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
